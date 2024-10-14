@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-danger-remove-unused-import",
+  "name": "babel-plugin-danger-remove-unused-imports",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -52,12 +52,12 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imcuttle/babel-plugin-danger-remove-unused-import.git"
+    "url": "git+https://github.com/shiftj18/babel-plugin-danger-remove-unused-import.git"
   },
   "bugs": {
-    "url": "https://github.com/imcuttle/babel-plugin-danger-remove-unused-import/issues"
+    "url": "https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/issues"
   },
-  "homepage": "https://github.com/imcuttle/babel-plugin-danger-remove-unused-import#readme",
+  "homepage": "https://github.com/shiftj18/babel-plugin-danger-remove-unused-import#readme",
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
