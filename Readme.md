@@ -1,4 +1,6 @@
-# babel-plugin-danger-remove-unused-import
+# babel-plugin-danger-remove-unused-imports
+
+> Fork from `babel-plugin-danger-remove-unused-import` and `babel-plugin-remove-unused-imports`, Support remove unused `require`.
 
 [![Build status](https://img.shields.io/travis/imcuttle/babel-plugin-danger-remove-unused-import/master.svg?style=flat-square)](https://travis-ci.org/imcuttle/babel-plugin-danger-remove-unused-import)
 [![Test coverage](https://img.shields.io/codecov/c/github/imcuttle/babel-plugin-danger-remove-unused-import.svg?style=flat-square)](https://codecov.io/github/imcuttle/babel-plugin-danger-remove-unused-import?branch=master)

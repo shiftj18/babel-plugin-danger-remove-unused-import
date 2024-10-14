@@ -1,7 +1,7 @@
 /**
- * @file: index
- * @author: Cuttle Cong
- * @date: 2017/11/29
+ * @author: Cuttle Cong、chuyik
+ * @forker: shiftj18
+ * @date: 2024/10/14
  * @description:
  */
 const match = require('./utils/matchRule')
