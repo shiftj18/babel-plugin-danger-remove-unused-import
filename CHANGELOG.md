@@ -1,4 +1,10 @@
-# 2.1.0 (2024-10-14)
+## [2.1.1](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/compare/v2.1.0...v2.1.1) (2024-10-14)
+
+### Bug Fixes
+
+- use npm hooks prePublishOnly ([5d8464d](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/commit/5d8464d))
+
+# [2.1.0](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/compare/5f822a4...v2.1.0) (2024-10-14)
 
 ### Bug Fixes
 
