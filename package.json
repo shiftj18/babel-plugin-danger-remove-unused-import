@@ -8,7 +8,7 @@
     "clean": "rm -rf lib/*",
     "babel": "babel src --out-dir lib -D",
     "dev": "npm run babel -- -w",
-    "prepublish": "npm run clean; npm run babel",
+    "prepublishOnly": "npm run clean; npm run babel",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "version": "npm run changelog"
   },
