@@ -1,3 +1,9 @@
+## [2.1.2](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/compare/v2.1.1...v2.1.2) (2024-10-25)
+
+### Bug Fixes
+
+- compat var a = require(), ...; ([f56a8fd](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/commit/f56a8fd))
+
 ## [2.1.1](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/compare/v2.1.0...v2.1.1) (2024-10-14)
 
 ### Bug Fixes
