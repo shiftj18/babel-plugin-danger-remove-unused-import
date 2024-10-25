@@ -61,5 +61,8 @@
       "pre-commit": "pretty-quick --staged",
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
