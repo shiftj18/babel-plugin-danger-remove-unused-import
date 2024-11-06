@@ -71,6 +71,7 @@ module.exports = function(babel) {
                     } else if (t.isObjectPattern(callPath.parent.id)) {
                       // case `const { c1, c2 } = require('c');`
                       // case `const { d1: rename, d2 } = require('c');`
+                      const parent = callPath.parentPath.parent
                       const keys = callPath.parent.id.properties.map(it => it.value.name)
                       if (keys.every(key => !bindings[key]?.referenced)) {
                         if (t.isVariableDeclaration(parent)) {
