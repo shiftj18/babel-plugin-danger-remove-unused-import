@@ -4,7 +4,7 @@
 
 ### Bug Fixes
 
-- objectPattern const { c1, c2 } = require(); ([74bb634](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/commit/74bb634))
+- objectPattern const { c1, c2 } = require(); ([9e64ce9](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/commit/9e64ce9))
 
 <a name="2.1.2"></a>
 
