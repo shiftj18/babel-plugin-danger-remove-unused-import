@@ -1,3 +1,11 @@
+<a name="2.1.4"></a>
+
+## [2.1.4](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/compare/v2.1.3...v2.1.4) (2024-11-08)
+
+### Bug Fixes
+
+- require-decarlations ([28358be](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/commit/28358be))
+
 <a name="2.1.3"></a>
 
 ## [2.1.3](https://github.com/shiftj18/babel-plugin-danger-remove-unused-import/compare/v2.1.2...v2.1.3) (2024-11-06)
