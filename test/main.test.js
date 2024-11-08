@@ -87,6 +87,29 @@ describe('main', function() {
         const sum = a + b;"
       `)
     })
+
+    it('require', function() {
+      expect(transformTest('unused/require.js').code).toMatchInlineSnapshot(`
+        "const a = require('a');
+        const {
+          d: renameD,
+          d2
+        } = require('d');
+        console.log('a', a);
+        console.log('d', renameD);"
+      `)
+    })
+
+    it('require2', function() {
+      expect(transformTest('unused/require2.js').code).toMatchInlineSnapshot(`
+        "var x2 = require('x2');
+        console.log('x2', x2);"
+      `)
+    })
+
+    it('require3', function() {
+      expect(transformTest('unused/require3.js').code).toMatchInlineSnapshot(`"var y = 1;"`)
+    })
   })
 
   describe('used', () => {
@@ -153,6 +176,27 @@ describe('main', function() {
         const css = \`
          \${sty.color} {}
         \`;"
+      `)
+    })
+
+    it('require-decarlations', function() {
+      expect(transformTest('used/require-decarlations.js').code).toMatchInlineSnapshot(`
+        "module.exports = function (e) {
+          var t = require("../util"),
+            i = null;
+          return t.ext(e.prototype, {});
+        };"
+      `)
+    })
+
+    it('require2', function() {
+      expect(transformTest('used/require2.js').code).toMatchInlineSnapshot(`
+        "var {
+            x6,
+            x61
+          } = require('x6'),
+          y = 1;
+        console.log('x6', x6);"
       `)
     })
   })

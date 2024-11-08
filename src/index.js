@@ -51,12 +51,13 @@ module.exports = function(babel) {
             CallExpression(callPath) {
               if (t.isIdentifier(callPath.node.callee, { name: 'require' })) {
                 const source = callPath.node.arguments[0]
+                const scopeBindings = callPath.scope.bindings
                 if (t.isStringLiteral(source) && !isIgnore(opts, source.value)) {
                   if (t.isVariableDeclarator(callPath.parent)) {
                     if (t.isIdentifier(callPath.parent.id)) {
                       // case `const a = require('a');`
                       const objName = callPath.parent.id?.name
-                      if (objName && !bindings[objName]?.referenced) {
+                      if (objName && !scopeBindings[objName]?.referenced) {
                         const parent = callPath.parentPath.parent
                         if (t.isVariableDeclaration(parent)) {
                           if (parent.declarations.length > 1) {
@@ -73,7 +74,7 @@ module.exports = function(babel) {
                       // case `const { d1: rename, d2 } = require('c');`
                       const parent = callPath.parentPath.parent
                       const keys = callPath.parent.id.properties.map(it => it.value.name)
-                      if (keys.every(key => !bindings[key]?.referenced)) {
+                      if (keys.every(key => !scopeBindings[key]?.referenced)) {
                         if (t.isVariableDeclaration(parent)) {
                           if (parent.declarations.length > 1) {
                             // var { x1, x11 } = require('x1'), ...;
