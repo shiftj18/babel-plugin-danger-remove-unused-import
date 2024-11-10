@@ -180,24 +180,11 @@ describe('main', function() {
     })
 
     it('require-decarlations', function() {
-      expect(transformTest('used/require-decarlations.js').code).toMatchInlineSnapshot(`
-        "module.exports = function (e) {
-          var t = require("../util"),
-            i = null;
-          return t.ext(e.prototype, {});
-        };"
-      `)
+      expect(transformTest('used/require-decarlations.js').code).toMatchSnapshot()
     })
 
     it('require2', function() {
-      expect(transformTest('used/require2.js').code).toMatchInlineSnapshot(`
-        "var {
-            x6,
-            x61
-          } = require('x6'),
-          y = 1;
-        console.log('x6', x6);"
-      `)
+      expect(transformTest('used/require2.js').code).toMatchSnapshot()
     })
   })
 
